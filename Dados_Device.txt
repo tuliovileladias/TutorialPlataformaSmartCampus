@@ -1,0 +1,19 @@
+Exemplo para o Device DEMO_CSI da APLICACAO TESTE
+
+ID da Aplicação: 5d1ce33592f4e8001a91c54a
+ID do Dispositivo: 5d431bb653b2d6003023e8bd
+Token do Dispositivo: -9NoeVXhplJsxaitbNFvYpYK
+CredentialDevice: trLIkl2dSyLGPXM8r7FQSNsu
+
+POST:
+https://smartcampus.inatel.br:4433/api/userapps/5d1ce33592f4e8001a91c54a/devices/5d431bb653b2d6003023e8bd/meas
+BODY:
+{
+	"x-master-token" : "trLIkl2dSyLGPXM8r7FQSNsu",
+	"temperatura" : 31,
+	"consumo" : 200
+}
+
+GET:
+https://smartcampus.inatel.br:4433/api/userapps/5d1ce33592f4e8001a91c54a/devices/5d431bb653b2d6003023e8bd/meas?x-master-token=trLIkl2dSyLGPXM8r7FQSNsu
+

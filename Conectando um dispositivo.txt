@@ -1,0 +1,23 @@
+Adicionar Dispositivo
+
+Copiar as informações:
+ID da Aplicação,
+ID do Dispositivo,
+Token do Dispositivo.
+
+Caso vá conectar o dispositivo via MQTT, copiar as informações MQTT.
+
+Criar uma Credencial do tipo Device e uma para trigger.
+Copiar o Token da Credential Device e da Credential Trigger.
+
+Para salvar medidas, faça um POST em:
+https://smartcampus.inatel.br:4433/api/userapps/{appId}/devices/{id}/meas
+Com o body no formato:
+{
+	"x-master-token" : "Credential_Devices_Token",
+	"Parametro1" : 10,
+	"Parametro2" : 20
+}
+
+Para ler medidas salvas, faça um GET em:
+https://smartcampus.inatel.br:4433/api/userapps/{appId}/devices/{id}/meas?x-master-token=Credential_Devices_Token
